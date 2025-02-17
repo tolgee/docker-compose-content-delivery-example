@@ -1,0 +1,22 @@
+tolgee:
+  postgres-autostart:
+    enabled: false
+  authentication:
+    enabled: true
+  content-delivery:
+    public-url-prefix: https://tolgee-cdn-bucket-1234.s3.eu-central-1.amazonaws.com/
+    storage:
+      #      azure:
+      #        connection-string:
+      #        container-name:
+      s3:
+        access-key: AKIAXXXXXXXXXXXXFN
+        bucket-name: tolgee-cdn-bucket-1234
+        endpoint: s3.eu-central-1.amazonaws.com
+        secret-key: <the key>
+        signing-region: eu-central-1
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/postgres
+    username: postgres
+    password: postgres
